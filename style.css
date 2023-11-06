@@ -39,6 +39,16 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  animation-name: header_s;
+  animation-duration: 0.5s;
+}
+@keyframes header_s {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translate(0);
+  }
 }
 .logo {
   width: 30%;
@@ -75,6 +85,8 @@ body {
   justify-content: space-between;
   align-items: center;
   color: var(--Very-Dark-Blue);
+  animation-name: section_1_left;
+  animation-duration: 0.8s;
 }
 .section_1 .sec_left {
   width: 50%;
@@ -111,8 +123,18 @@ p {
   transition: 0.3s;
   color: #fff;
 }
+@keyframes section_1_left {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
 .section_1 .sec_right {
   width: 50%;
+  animation-name: section_1_right;
+  animation-duration: 1s;
 }
 .section_1 .sec_right img {
   max-width: 100%;
@@ -124,6 +146,14 @@ p {
 }
 .section_2 .phn {
   display: none;
+}
+@keyframes section_1_right {
+  from {
+    transform: translate(1000px);
+  }
+  to {
+    transform: translate(0);
+  }
 }
 .section_2 .sub_sec {
   background-color: #f8f8fe;
